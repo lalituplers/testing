@@ -1,0 +1,81 @@
+From 7eced931574b2f96418b66b4d653d21d2349d058 Mon Sep 17 00:00:00 2001
+From: Lalitkumar Pendhare <UP0163@uplers.local>
+Date: Wed, 13 Jan 2021 00:31:00 +0530
+Subject: [PATCH 2/2] add html code
+
+---
+ index.php                          | 14 ++++++++++++++
+ link1.php                          |  1 +
+ link2.php                          |  1 +
+ patches/0001-added-some-text.patch | 19 +++++++++++++++++++
+ 4 files changed, 35 insertions(+)
+ create mode 100644 index.php
+ create mode 100644 link1.php
+ create mode 100644 link2.php
+ create mode 100644 patches/0001-added-some-text.patch
+
+diff --git a/index.php b/index.php
+new file mode 100644
+index 0000000..77f5242
+--- /dev/null
++++ b/index.php
+@@ -0,0 +1,14 @@
++<!DOCTYPE html>
++<html>
++<head>
++<title>Page Title</title>
++</head>
++<body>
++
++<h1>My First Heading</h1>
++<p>My first paragraph.</p>
++
++<a href="link1.php">link1</a>
++<a href="link2.php">link2</a>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/link1.php b/link1.php
+new file mode 100644
+index 0000000..2c47b22
+--- /dev/null
++++ b/link1.php
+@@ -0,0 +1 @@
++Hello Link1
+\ No newline at end of file
+diff --git a/link2.php b/link2.php
+new file mode 100644
+index 0000000..e340378
+--- /dev/null
++++ b/link2.php
+@@ -0,0 +1 @@
++Hello Link2
+\ No newline at end of file
+diff --git a/patches/0001-added-some-text.patch b/patches/0001-added-some-text.patch
+new file mode 100644
+index 0000000..ae99c39
+--- /dev/null
++++ b/patches/0001-added-some-text.patch
+@@ -0,0 +1,19 @@
++From 879f9098dc55808af762c65cc3c29673038155a7 Mon Sep 17 00:00:00 2001
++From: Lalitkumar Pendhare <UP0163@uplers.local>
++Date: Wed, 13 Jan 2021 00:10:04 +0530
++Subject: [PATCH] added some text
++
++---
++ test.php | 1 +
++ 1 file changed, 1 insertion(+)
++
++diff --git a/test.php b/test.php
++index e69de29..7a35e57 100644
++--- a/test.php
+++++ b/test.php
++@@ -0,0 +1 @@
+++Hello Lalit
++\ No newline at end of file
++-- 
++2.15.0.windows.1
++
+-- 
+2.15.0.windows.1
+
